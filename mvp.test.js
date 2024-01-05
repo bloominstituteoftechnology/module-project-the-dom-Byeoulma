@@ -30,12 +30,12 @@ beforeEach(() => {
 })
 
 describe('Sprint 5 Module', () => {
-  describe('Task 1 - Class name of widget', () => {
+  describe.only('Task 1 - Class name of widget', () => {
     test('👉 [1] All 4 widgets have a "widget" class name', () => {
       expect(document.querySelectorAll('section .widget')).toHaveLength(4)
     })
   })
-  describe('Task 2 - Quote of the Day widget', () => {
+  describe.only('Task 2 - Quote of the Day widget', () => {
     describe(`The best thing about a boolean...
       Anonymous in an unknown date`, () => {
       beforeAll(() => {
@@ -67,7 +67,7 @@ describe('Sprint 5 Module', () => {
       })
     })
   })
-  describe('Task 3 - Corporate Speak', () => {
+  describe.only('Task 3 - Corporate Speak', () => {
     beforeAll(() => {
       jest.spyOn(global.Math, 'random').mockReturnValue(0.9)
     })
@@ -79,7 +79,7 @@ describe('Sprint 5 Module', () => {
     })
   })
 
-  describe('Task 4 - Countdown widget', () => {
+  describe.only('Task 4 - Countdown widget', () => {
     test('👉 [7] Counts from "T-minus 5..." to "Liftoff! 🚀"', () => {
       screen.getByText('Countdown')
       screen.getByText('T-minus 5...')
@@ -95,7 +95,7 @@ describe('Sprint 5 Module', () => {
       screen.getByText('Liftoff! 🚀')
     })
   })
-  describe('Task 5 - Friends widget', () => {
+  describe.only('Task 5 - Friends widget', () => {
     describe('Kimberly Ng was born in 1987 and is friends with Samantha Singh.', () => {
       beforeAll(() => {
         jest.spyOn(global.Math, 'random').mockReturnValue(0.6)
@@ -130,7 +130,7 @@ describe('Sprint 5 Module', () => {
       })
     })
   })
-  describe('Task 6 - Tabbing through widgets', () => {
+  describe.only('Task 6 - Tabbing through widgets', () => {
     test('👉 [11] Can tab through widgets', () => {
       const widgets = document.querySelectorAll('.widget')
       expect(widgets).toHaveLength(4)
